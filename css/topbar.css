@@ -1,4 +1,23 @@
+html, body {
+    margin: 0;
+}
+
 .topBar {
     width: 100vw;
     background-color: #be3434;
+    padding: 10px 0;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.topBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.topBar a:hover {
+    background-color: #972a2a;
 }
