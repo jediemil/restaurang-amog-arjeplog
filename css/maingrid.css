@@ -14,6 +14,11 @@
   grid-auto-rows: minmax(40px, auto);
 }
 
+.menyh1 {
+  grid-column: 1/-1;
+  grid-rows: 1;
+}
+
 
 
 /*Meny container end */
