@@ -3,7 +3,7 @@
 }
 
 .li_sedel {
- margin-top: 20px;
+ margin-top: 25px;
  font-size: 1.5vw;
  font-family: Helvetica, sans-serif;
  list-style: none;
@@ -12,17 +12,22 @@
 .menyh1 {
   font-family: 'Courier New', monospace;
   font-size: 3em;
+  margin-bottom: 0;
 }
 
 .menyh2 {
   font-family: 'Courier New', monospace;
-  font-size: 2em;
-  margin: 0px;
+  font-size: 2vw;
 }
 
 #img_meny-pesto {
   border: solid #be3434 4px;
-  width: 100%;
-  height: auto;
-  margin: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+#img_drinks {
+  border: solid #be3434 4px;
+  width: 90%;
+  margin: auto;
 }
