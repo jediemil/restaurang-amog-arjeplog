@@ -5,10 +5,14 @@ html, body {
 .topBar {
     width: 100vw;
     background-color: #be3434;
-    padding: 10px 0;
+    height: 48px;
     position: static;
     top: 0;
     left: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
 }
 
 .topBar a {
@@ -16,8 +20,13 @@ html, body {
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .topBar a:hover {
     background-color: #972a2a;
+}
+
+.topBar img {
+    height: 48px;
 }
