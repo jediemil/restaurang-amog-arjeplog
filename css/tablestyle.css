@@ -29,3 +29,7 @@ html, body {
     border: solid #972a2a 2px;
     border-radius: 15px;
 }
+
+.hidden {
+    display: none !important;
+}
