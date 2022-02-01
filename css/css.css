@@ -1,3 +1,11 @@
+body {
+  background-image: url("../resources/resturang.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 .title {
   font-size: 80px;
   text-align: center;
