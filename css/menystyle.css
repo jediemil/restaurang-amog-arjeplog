@@ -4,5 +4,25 @@
 
 .li_sedel {
  margin-top: 20px;
+ font-size: 1.5vw;
+ font-family: Helvetica, sans-serif;
  list-style: none;
+}
+
+.menyh1 {
+  font-family: 'Courier New', monospace;
+  font-size: 3em;
+}
+
+.menyh2 {
+  font-family: 'Courier New', monospace;
+  font-size: 2em;
+  margin: 0px;
+}
+
+#img_meny-pesto {
+  border: solid #be3434 4px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
 }
