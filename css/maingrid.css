@@ -6,25 +6,7 @@
   grid-auto-rows: minmax(40px, auto);
 }
 
-/* Meny container start */
 
-.menuContainer {
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-auto-rows: minmax(40px, auto);
-}
-
-.menyh1 {
-  grid-column: 1/-1;
-  grid-rows: 1;
-}
-
-.math2 {
-  
-}
-
-
-/*Meny container end */
 /*
 Boka bord container start
 */
