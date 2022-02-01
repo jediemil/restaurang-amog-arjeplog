@@ -1,0 +1,16 @@
+#bordTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+.buttons {
+    outline: none;
+}
+
+#timeTable button {
+    border: solid #be3434 2px;
+    border-radius: 10px;
+    background-color: #be3434;
+    color: white;
+    height: 10vh;
+}
