@@ -7,10 +7,10 @@
 }
 
 
-/*
-Boka bord container start
-*/
 
-/*
-Boka bord container end
-*/
+#pesto {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  z-index: 1;
+  width: 100%;
+}
