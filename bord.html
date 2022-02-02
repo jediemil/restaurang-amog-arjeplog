@@ -20,15 +20,18 @@
 <div class="bordContainer">
     <h1 id="bordTitle">Boka bord hos oss</h1>
     <p id="infoText">Välj ett datum för din bokning</p>
-    <div id="timeTable">
+    <div id="dateTable">
         <div id="placeholder"></div>
     </div>
     <button id="back" class="buttons">Gå tillbaka</button>
     <button id="forward" class="buttons">Längre fram</button>
 </div>
 
-<div class="popup hidden">
+<div class="popup hidden" id="tablePopup">
     <h1>Boka bord</h1>
+    <div id="timeTable">
+        <div id="timePlaceholder"></div>
+    </div>
 </div>
 
 <script src="js/bord.js"></script>

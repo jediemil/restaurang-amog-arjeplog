@@ -12,10 +12,11 @@ for (let y = 0; y < height; y++) {
 
         let element = document.createElement("button");
         element.innerText = "Mars " + day
-        document.getElementById("timeTable").insertBefore(element, document.getElementById("placeholder"));
+        document.getElementById("dateTable").insertBefore(element, document.getElementById("placeholder"));
         console.log(element)
         element.onclick = function () {
-            
+            console.log("Boka " + day)
+            document.getElementById("tablePopup").classList.remove("hidden")
         }
     }
 }

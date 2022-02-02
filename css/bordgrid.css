@@ -32,7 +32,7 @@ Boka bord container start
     grid-column: -3/-1;
 }
 
-#timeTable {
+#dateTable {
     grid-row: 3/4;
     grid-column: 2/-2;
 

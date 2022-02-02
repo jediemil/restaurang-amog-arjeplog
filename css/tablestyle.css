@@ -16,7 +16,7 @@ html, body {
     outline: none;
 }
 
-#timeTable button {
+#dateTable button {
     border: solid #be3434 2px;
     border-radius: 10px;
     background-color: #be3434;
@@ -24,7 +24,7 @@ html, body {
     height: 10vh;
 }
 
-#timeTable button:hover {
+#dateTable button:hover {
     background-color: #972a2a;
     border: solid #972a2a 2px;
     border-radius: 15px;
