@@ -6,6 +6,8 @@ Boka bord container start
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px auto auto 10px auto;
+
+    margin-top: 48px;
 }
 
 #bordTitle {
