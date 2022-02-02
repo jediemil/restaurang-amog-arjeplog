@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("../resources/resturangblur.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .li_sedel {
  margin-top: 25px;
  font-size: 1.5vw;
  font-family: Helvetica, sans-serif;
+ color: white;
  list-style: none;
 }
 
@@ -13,11 +21,13 @@
   font-family: 'Courier New', monospace;
   font-size: 3em;
   margin-bottom: 0;
+  color: black;
 }
 
 .menyh2 {
   font-family: 'Courier New', monospace;
   font-size: 2vw;
+  color: white;
 }
 
 #img_meny-pesto {

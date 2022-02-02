@@ -6,7 +6,7 @@ html, body {
     width: 100vw;
     background-color: #be3434;
     height: 48px;
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0;
