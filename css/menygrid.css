@@ -8,9 +8,14 @@
 }
 
 .menyh1 {
-  grid-column: 1/-1;
+  grid-column: 5/9;
   grid-rows: 1;
   text-align: center;
+}
+
+#recension {
+  grid-column: 9/-1;
+  grid-row: 1;
 }
 
 #math2 {

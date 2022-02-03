@@ -22,12 +22,19 @@ body {
   font-size: 3em;
   margin-bottom: 0;
   color: black;
+  padding: 0;
 }
 
 .menyh2 {
   font-family: 'Courier New', monospace;
   font-size: 2vw;
   color: white;
+}
+
+#recension {
+  margin-top: 35px;
+  font-size: 1.3vw;
+  font-family: Georgia, serif;
 }
 
 #img_meny-pesto {
