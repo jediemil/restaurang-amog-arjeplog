@@ -36,7 +36,7 @@ for (let day = 1; day < monthLength[currentMonth]+1; day++) {
     const element = document.createElement("button");
     let dayLetter = "e"
     if ((day.toString().endsWith("1") || day.toString().endsWith("2")) && (day > 12 || day < 10)) dayLetter = "a"
-    element.innerText = monthTable[currentMonth] + " " + day
+    element.innerText = day + ":" + dayLetter + " " + monthTable[currentMonth]
     document.getElementById("dateTable").insertBefore(element, document.getElementById("placeholder"));
     element.onclick = function () {
         console.log("Boka " + day)
