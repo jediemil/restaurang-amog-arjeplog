@@ -49,6 +49,10 @@
   grid-row: 6/8;
 }
 
+.par3 {
+  grid-column: 3/6;
+  grid-row: 7/9;
+}
 
 #resturang {
   grid-column: 1/-1;
@@ -57,3 +61,8 @@
   z-index: -1;
 }
 
+#välkommen {
+  grid-column: 3/11;
+  grid-row: 10/11;
+  text-align: center;
+}
