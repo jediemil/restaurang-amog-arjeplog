@@ -66,3 +66,20 @@
   grid-row: 10/11;
   text-align: center;
 }
+
+.historia {
+  text-align: right;
+}
+
+.historiatext {
+  text-align: right;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+}
