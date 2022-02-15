@@ -2,10 +2,55 @@
 <html lang="se">
 <head>
     <meta charset="UTF-8">
-    <title>Boka bord</title>
+    <title>Boka bord hos oss</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link type="text/css" rel="stylesheet" href="css/topbar.css">
+    <link type="text/css" rel="stylesheet" href="css/bordgrid.css">
+    <link type="text/css" rel="stylesheet" href="css/tablestyle.css">
 </head>
 <body>
+<nav class="topBar">
+    <img src="resources/amog.png" alt="Logga">
+    <a href="index.html">Start</a>
+    <a href="bord.html">Boka bord</a>
+    <a href="meny.html">Vår mat</a>
+    <img src="resources/amog.png" alt="Logga">
+</nav>
+<nav class="topBarMobile">
+    <button class="dropdownButton" onclick="openBar()">Meny</button>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="index.html">Start</a>
+        <a href="bord.html">Boka bord</a>
+        <a href="meny.html">Vår mat</a>
+        <img src="resources/amog.png" alt="Logga">
+    </div>
+    <script>
+        function openBar() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+    </script>
+</nav>
+<div class="bordContainer">
+    <h1 id="bordTitle">Boka bord hos oss</h1>
+    <p id="infoText">Välj ett datum för din bokning</p>
+    <div id="dateTable">
+        <div id="placeholder"></div>
+    </div>
+    <button id="back" class="buttons">Gå tillbaka</button>
+    <button id="forward" class="buttons">Längre fram</button>
+</div>
 
+<div class="popup hidden" id="tablePopup">
+    <h1>Boka bord</h1>
+    <div id="timeTable">
+        <div id="timePlaceholder"></div>
+    </div>
+</div>
+
+<script src="js/bord.js"></script>
 </body>
 </html>

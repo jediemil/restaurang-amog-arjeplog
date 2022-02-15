@@ -1,4 +1,87 @@
+html, body {
+    margin: 0;
+}
+
 .topBar {
     width: 100vw;
     background-color: #be3434;
+    height: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 54px 1fr 1fr 1fr 54px;
+}
+
+.topBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.topBar a:hover {
+    background-color: #972a2a;
+}
+
+.topBar img {
+    height: 48px;
+}
+
+.topBarMobile {
+    display: none;
+    background-color: #be3434;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+.dropdownButton {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;;
+    display: inline-flex;
+    background-color: #be3434;
+    border: none;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;;
+    text-align: center;
+    font-size: 150%;
+    padding: 20px;
+}
+
+.dropdown img {
+    display: block;
+    padding: 20px;
+    height: 40px;
+    margin: auto;
+}
+
+.dropdown {
+    display: none;
+}
+.show {display:block;}
+
+@media only screen and (max-width: 900px) {
+    .topBar {
+        display: none;
+    }
+    .topBarMobile {
+        display: inline-block;
+    }
 }

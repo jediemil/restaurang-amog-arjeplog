@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Restaurang Amog Arjeplog</title>
-    <link rel="stylesheet" href="css/maingrid.css">
-    <link rel="stylesheet" href="css/topbar.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/maingrid.css">
+    <link rel="stylesheet" type="text/css" href="css/topbar.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 <body>
-<div class="topBar">
+<nav class="topBar">
+    <img src="resources/amog.png" alt="Logga">
     <a href="index.html">Start</a>
     <a href="bord.html">Boka bord</a>
     <a href="meny.html">Vår mat</a>
-</div>
+    <img src="resources/amog.png" alt="Logga">
+</nav>
+<nav class="topBarMobile">
+    <button class="dropdownButton" onclick="openBar()">Meny</button>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="index.html">Start</a>
+        <a href="bord.html">Boka bord</a>
+        <a href="meny.html">Vår mat</a>
+        <img src="resources/amog.png" alt="Logga">
+    </div>
+    <script>
+        function openBar() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+    </script>
+</nav>
 <div class="startContainer">
 
-<<<<<<< Updated upstream
-<h1 class="title"> Bistro Amog </h1>
-=======
 <h1 class="title">Bistro Amog</h1>
 <img src="resources/resturang.jpeg" alt="resturang" id="resturang">
 
 <img src="resources/pesto.jpeg" alt="palms a sweaty, communist manipesti" id="pesto">
 <img src="resources/korv.jpeg" alt="Gorbakorv" id="korv">
 <img src="resources/coxfilé.jpeg" alt="en mysig liten oxfilé" id="oxfilé">
->>>>>>> Stashed changes
 
 
 <article class="par1">
@@ -40,8 +58,6 @@
 <h3 class="">Historia</h3>
 <p class=""> Bistro Amog etablrades 1963 i Arjeplog tillsammans med våran syster-kedja Bistro imposter som lanserades i Skokloster. Redan då serverade vi våran mest ikoniska rätt "Kommunist Manipesto" som skapades av våran grundare Adolf Imposter för att "Demoralisera ryssen inför operation barbarossa". Några år senare tillkom även vårt berömda Långkokta TrappsTEG som bringar lycka till familjer ända till idag.
 </article>
-
-
 
 </div>
 </body>
