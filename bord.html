@@ -13,14 +13,14 @@
     <link type="text/css" rel="stylesheet" href="css/tablestyle.css">
 </head>
 <body>
-<nav class="topBar">
+<nav class="topBar"> <!-- Början på topBar -->
     <img src="resources/amog.png" alt="Logga" id="leftAmog">
     <a href="index.html">Start</a>
     <a href="bord.html">Boka bord</a>
     <a href="meny.html">Vår mat</a>
     <img src="resources/amog.png" alt="Logga" id="rightAmog">
 </nav>
-<nav class="topBarMobile">
+<nav class="topBarMobile"> <!-- Mobil topbar -->
     <button class="dropdownButton" onclick="openBar()">Meny</button>
     <div class="dropdown" id="dropdownMenu">
         <a href="index.html">Start</a>
@@ -28,23 +28,24 @@
         <a href="meny.html">Vår mat</a>
         <img src="resources/amog.png" alt="Logga">
     </div>
-    <script>
+    <script> <!-- Javascript i HTML för störst sannolikhet att det fungerar -->
         function openBar() {
             document.getElementById("dropdownMenu").classList.toggle("show");
         }
     </script>
-</nav>
+</nav> <!-- Slut på topBar -->
+
 <div class="bordContainer">
     <h1 id="bordTitle">Boka bord hos oss</h1>
     <p id="infoText">Välj ett datum för din bokning</p>
-    <div id="dateTable">
-        <div id="placeholder"></div>
+    <div id="dateTable"> <!-- En till grid där alla dagar kommer att hamna -->
+        <div id="placeholder"></div> <!-- Placeholder div som får javascript att fungera, raderas senare -->
     </div>
     <button id="back" class="buttons">Gå tillbaka</button>
     <button id="forward" class="buttons">Längre fram</button>
 </div>
 
-<div class="popup hidden" id="tablePopup">
+<div class="popup hidden" id="tablePopup"> <!-- Popup där man får välja tid till bordet -->
     <h1>Boka bord</h1>
     <div id="timeTable">
         <div id="timePlaceholder"></div>
