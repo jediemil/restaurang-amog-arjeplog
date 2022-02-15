@@ -10,6 +10,7 @@ html, body {
     top: 0;
     left: 0;
     padding: 0;
+    z-index: 100;
 
     display: grid;
     grid-template-columns: 56px 1fr 1fr 1fr 56px;
@@ -22,6 +23,7 @@ html, body {
     padding: 10px 20px;
     text-align: center;
     font-family: Helvetica, sans-serif;
+    z-index: 100;
 }
 
 .topBar a:hover {
@@ -33,7 +35,7 @@ html, body {
     margin: auto;
 }
 
-#spinImage {
+#rightAmog {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -45,7 +47,7 @@ html, body {
     left: 0;
     top: 0;
     width: 100vw;
-    z-index: 2;
+    z-index: 100;
 }
 
 .dropdownButton {
@@ -59,6 +61,7 @@ html, body {
     display: inline-flex;
     background-color: #be3434;
     border: none;
+    z-index: 100;
 }
 
 .dropdown a {
@@ -69,6 +72,7 @@ html, body {
     text-align: center;
     font-size: 150%;
     padding: 20px;
+    z-index: 100;
 }
 
 .dropdown img {
@@ -76,6 +80,7 @@ html, body {
     padding: 20px;
     height: 40px;
     margin: auto;
+    z-index: 100;
 }
 
 .dropdown {
