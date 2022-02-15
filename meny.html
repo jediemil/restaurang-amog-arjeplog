@@ -11,12 +11,27 @@
     <title>Vår meny</title>
 </head>
 <body>
-  <div class="topBar">
+  <nav class="topBar">
       <img src="resources/amog.png" alt="Logga">
       <a href="index.html">Start</a>
       <a href="bord.html">Boka bord</a>
       <a href="meny.html">Vår mat</a>
-  </div>
+      <img src="resources/amog.png" alt="Logga">
+  </nav>
+  <nav class="topBarMobile">
+      <button class="dropdownButton" onclick="openBar()">Meny</button>
+      <div class="dropdown" id="dropdownMenu">
+          <a href="index.html">Start</a>
+          <a href="bord.html">Boka bord</a>
+          <a href="meny.html">Vår mat</a>
+          <img src="resources/amog.png" alt="Logga">
+      </div>
+      <script>
+          function openBar() {
+              document.getElementById("dropdownMenu").classList.toggle("show");
+          }
+      </script>
+  </nav>
   <div class="menyContainer">
     <h1 class="menyh1">Meny</h1>
     <p id="recension">5/5 <em>"Smarrigt, Utsökt, Söt"</em> - Marksus Amogujalay</p>
