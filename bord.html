@@ -14,11 +14,11 @@
 </head>
 <body>
 <nav class="topBar">
-    <img src="resources/amog.png" alt="Logga">
+    <img src="resources/amog.png" alt="Logga" id="leftAmog">
     <a href="index.html">Start</a>
     <a href="bord.html">Boka bord</a>
     <a href="meny.html">Vår mat</a>
-    <img src="resources/amog.png" alt="Logga" id="spinImage">
+    <img src="resources/amog.png" alt="Logga" id="rightAmog">
 </nav>
 <nav class="topBarMobile">
     <button class="dropdownButton" onclick="openBar()">Meny</button>
@@ -28,11 +28,6 @@
         <a href="meny.html">Vår mat</a>
         <img src="resources/amog.png" alt="Logga">
     </div>
-    <script>
-        function openBar() {
-            document.getElementById("dropdownMenu").classList.toggle("show");
-        }
-    </script>
 </nav>
 <div class="bordContainer">
     <h1 id="bordTitle">Boka bord hos oss</h1>
@@ -52,5 +47,6 @@
 </div>
 
 <script src="js/bord.js"></script>
+<script src="js/topbar.js"></script>
 </body>
 </html>
