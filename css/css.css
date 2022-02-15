@@ -3,12 +3,29 @@ body {
   background-color: #e6e1c8;
 }
 
+article {
+  font-size: 2vw;
+}
+
 
 .title {
-  font-size: 80px;
+  font-size: 10vw;
   text-align: center;
 }
 
-.historia {
-  justify-content: end;
+#välkommen {
+  font-size: 3vw;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .title {
+    font-size: 6vw;
+  }
+
+  article {
+    font-size: 3vw;
+  }
+
 }
