@@ -31,6 +31,10 @@ body {
     color: white;
 }
 
+.img_frame {
+    border: solid #be3434 4px;
+}
+
 #recension {
     margin-top: 35px;
     font-size: 1.4vw;
@@ -38,13 +42,11 @@ body {
 }
 
 #img_meny-pesto {
-    border: solid #be3434 4px;
     width: 90%;
     margin: auto;
 }
 
 #img_drinks {
-    border: solid #be3434 4px;
     width: 90%;
     margin: auto;
 }
