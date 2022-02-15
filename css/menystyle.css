@@ -33,7 +33,7 @@ body {
 
 #recension {
     margin-top: 35px;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     font-family: Georgia, serif;
 }
 
@@ -51,13 +51,9 @@ body {
 
 @media only screen and (max-width: 650px) {
 
-    body {
-        backdrop-filter: brightness(120%);
-    }
-
     .li_sedel {
-        margin-top: 25px;
-        font-size: 1.5vw;
+        margin-top: 15px;
+        font-size: 3vw;
         font-family: Helvetica, sans-serif;
         color: white;
     }
@@ -72,24 +68,25 @@ body {
 
     .menyh2 {
         font-family: 'Courier New', monospace;
-        font-size: 2vw;
+        font-size: 4vw;
         color: white;
     }
 
     #recension {
         margin-top: 20px;
-        font-size: 2vw;
+        font-size: 3vw;
+        color: #ebd2cc;
     }
 
     #img_meny-pesto {
         border: solid #be3434 4px;
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
 
     #img_drinks {
         border: solid #be3434 4px;
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
 }
