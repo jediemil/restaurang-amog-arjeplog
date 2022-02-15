@@ -4,12 +4,12 @@ let leftAmogX = 0
 let leftAmogY = 0
 
 document.onmousemove = function (e) {
-    const dxLeft = e.pageX - leftAmogX;
-    const dyLeft = e.pageY - leftAmogY;
+    const dxLeft = e.clientX - leftAmogX;
+    const dyLeft = e.clientY - leftAmogY;
     const thetaLeft = Math.atan2(dyLeft, dxLeft);
 
-    const dxRight = e.pageX - rightAmogX;
-    const dyRight = e.pageY - rightAmogY;
+    const dxRight = e.clientX - rightAmogX;
+    const dyRight = e.clientY - rightAmogY;
     const thetaRight = Math.atan2(dyRight, dxRight);
     document.getElementById("leftAmog").style.transform = "rotate(" + thetaLeft * (180 / Math.PI) + "deg)"
     document.getElementById("rightAmog").style.transform = "rotate(" + thetaRight * (180 / Math.PI) + "deg) scaleY(-1)"

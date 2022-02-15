@@ -46,9 +46,13 @@
 </div>
 
 <div class="popup hidden" id="tablePopup"> <!-- Popup där man får välja tid till bordet -->
-    <h1>Boka bord</h1>
-    <div id="timeTable">
-        <div id="timePlaceholder"></div>
+    <div id="popupContainer">
+        <h1>Boka bord</h1>
+        <p id="infoPopupText">Välj en tillgänglig tid för din bokning.</p>
+        <div id="timeTable">
+            <div id="timePlaceholder"></div>
+        </div>
+        <button onclick="closePopup()">Tillbaka</button>
     </div>
 </div>
 
