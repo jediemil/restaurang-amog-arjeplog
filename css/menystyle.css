@@ -53,14 +53,14 @@ body {
 
     .li_sedel {
         margin-top: 15px;
-        font-size: 3vw;
+        font-size: 4vw;
         font-family: Helvetica, sans-serif;
         color: white;
     }
 
     .menyh1 {
         font-family: 'Courier New', monospace;
-        font-size: 2em;
+        font-size: 2.5em;
         margin-bottom: 0;
         color: black;
         padding: 0;
@@ -68,13 +68,13 @@ body {
 
     .menyh2 {
         font-family: 'Courier New', monospace;
-        font-size: 4vw;
+        font-size: 5vw;
         color: white;
     }
 
     #recension {
         margin-top: 20px;
-        font-size: 3vw;
+        font-size: 4vw;
         color: #ebd2cc;
     }
 
