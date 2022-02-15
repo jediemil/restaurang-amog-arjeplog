@@ -36,7 +36,7 @@ const monthLength = {
 
 for (let day = 1; day < monthLength[currentMonth]+1; day++) {
     let element = document.createElement("button");
-    element.innerText = "Mars " + day
+    element.innerText = monthTable[currentMonth] + " " + day
     document.getElementById("dateTable").insertBefore(element, document.getElementById("placeholder"));
     console.log(element)
     element.onclick = function () {

@@ -26,7 +26,3 @@ window.onload = window.onresize = function () {
     rightAmogY = rigthAmogRect.top + rigthAmogRect.height/2
     rightAmogX = rigthAmogRect.left + rigthAmogRect.width/2
 }
-
-function openBar() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-}
