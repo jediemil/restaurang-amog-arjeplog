@@ -45,6 +45,9 @@ for (let day = 1; day < monthLength[currentMonth]+1; day++) {
     }
 }
 
+document.getElementById("forward").classList.remove("hidden")
+document.getElementById("back").classList.remove("hidden")
+
 document.getElementById("back").style.display = "none"
 
 document.getElementById("placeholder").remove()

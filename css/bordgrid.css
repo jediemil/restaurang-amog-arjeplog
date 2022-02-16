@@ -42,6 +42,12 @@ Boka bord container start
     grid-gap: 5px;
 }
 
+#placeholder {
+    font-size: 30px;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
 @media only screen and (max-width: 450px) {
     #dateTable {
         grid-template-columns: repeat(3, 1fr);
