@@ -1,5 +1,3 @@
-const width = 7
-const height = 5
 const max = 31
 
 let currentMonth = 2
@@ -35,12 +33,14 @@ const monthLength = {
 }
 
 for (let day = 1; day < monthLength[currentMonth]+1; day++) {
-    let element = document.createElement("button");
-    element.innerText = monthTable[currentMonth] + " " + day
+    const element = document.createElement("button");
+    let dayLetter = "e"
+    if ((day.toString().endsWith("1") || day.toString().endsWith("2")) && (day > 12 || day < 10)) dayLetter = "a"
+    element.innerText = day + ":" + dayLetter + " " + monthTable[currentMonth]
     document.getElementById("dateTable").insertBefore(element, document.getElementById("placeholder"));
-    console.log(element)
     element.onclick = function () {
         console.log("Boka " + day)
+        document.getElementById("infoPopupText").innerText = "Välj en tillgänglig tid för din bokning. Vald dag är: " + day + ":" + dayLetter + " " + monthTable[currentMonth]
         document.getElementById("tablePopup").classList.remove("hidden")
     }
 }
@@ -48,3 +48,7 @@ for (let day = 1; day < monthLength[currentMonth]+1; day++) {
 document.getElementById("back").style.display = "none"
 
 document.getElementById("placeholder").remove()
+
+function closePopup() {
+    document.getElementById("tablePopup").classList.add("hidden")
+}
