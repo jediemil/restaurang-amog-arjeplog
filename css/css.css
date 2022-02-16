@@ -40,7 +40,6 @@ article {
 
   article {
     font-size: 3vw;
-    animation: animationStart 5s linear 1
   }
 
   .title {
@@ -49,7 +48,6 @@ article {
 
   #välkommen {
     font-size: 4vw;
-    animation: animationStart 5s linear 1
   }
 
 }
