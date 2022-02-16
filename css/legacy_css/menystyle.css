@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("../resources/resturangblur.jpg");
+.menyBody {
+    background-image: url("../../resources/resturangblur.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

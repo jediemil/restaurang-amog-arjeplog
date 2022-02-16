@@ -1,6 +1,9 @@
-const max = 31
+const date = new Date()
+const todayDayNumber = parseInt(String(date.getDate()).padStart(2, '0'))
+const todayMonthNumber = parseInt(String(date.getMonth() + 1).padStart(2, '0'))
+const dateTable = document.getElementById("dateTable")
 
-let currentMonth = 2
+let currentMonth = todayMonthNumber - 1
 
 const monthTable = {
     0: "Januari",
@@ -32,26 +35,43 @@ const monthLength = {
     11: 31
 }
 
-for (let day = 1; day < monthLength[currentMonth]+1; day++) {
-    const element = document.createElement("button");
-    let dayLetter = "e"
-    if ((day.toString().endsWith("1") || day.toString().endsWith("2")) && (day > 12 || day < 10)) dayLetter = "a"
-    element.innerText = day + ":" + dayLetter + " " + monthTable[currentMonth]
-    document.getElementById("dateTable").insertBefore(element, document.getElementById("placeholder"));
-    element.onclick = function () {
-        console.log("Boka " + day)
-        document.getElementById("infoPopupText").innerText = "Välj en tillgänglig tid för din bokning. Vald dag är: " + day + ":" + dayLetter + " " + monthTable[currentMonth]
-        document.getElementById("tablePopup").classList.remove("hidden")
+function updateDates() {
+    while (dateTable.firstChild) {
+        dateTable.firstChild.remove()
+    }
+    for (let day = 1; day < monthLength[currentMonth%12] + 1; day++) {
+        const element = document.createElement("button");
+        let dayLetter = "e"
+        if ((day.toString().endsWith("1") || day.toString().endsWith("2")) && (day > 12 || day < 10)) dayLetter = "a"
+        element.innerText = day + ":" + dayLetter + " " + monthTable[currentMonth%12]
+        if (day < todayDayNumber && todayMonthNumber > currentMonth) {
+            element.classList.add("pastDay")
+        } else {
+            element.onclick = function () {
+                console.log("Boka " + day)
+                document.getElementById("infoPopupText").innerText = "Välj en tillgänglig tid för din bokning. Vald dag är: " + day + ":" + dayLetter + " " + monthTable[currentMonth%12]
+                document.getElementById("tablePopup").classList.remove("hidden")
+            }
+        }
+        dateTable.appendChild(element)
     }
 }
 
 document.getElementById("forward").classList.remove("hidden")
-document.getElementById("back").classList.remove("hidden")
-
-document.getElementById("back").style.display = "none"
-
 document.getElementById("placeholder").remove()
 
 function closePopup() {
     document.getElementById("tablePopup").classList.add("hidden")
 }
+
+function changeDate(step) {
+    currentMonth += step
+    if (currentMonth < todayMonthNumber) {
+        document.getElementById("back").classList.add("hidden")
+    } else {
+        document.getElementById("back").classList.remove("hidden")
+    }
+    updateDates()
+}
+
+updateDates()

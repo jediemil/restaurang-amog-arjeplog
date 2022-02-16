@@ -1,0 +1,225 @@
+/*
+    Start tablestyle.css
+*/
+
+html, body {
+    margin: 0;
+}
+
+#bordTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+#infoText {
+    text-align: center;
+    font-size: 20px;
+}
+
+.buttons {
+    outline: none;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    height: 10vh;
+}
+
+#dateTable button {
+    border: solid #be3434 2px;
+    border-radius: 10px;
+    background-color: #be3434;
+    color: white;
+    height: 10vh;
+}
+
+.pastDay {
+    background-color: #8c2929 !important;
+    border: solid #8c2929 2px !important;
+}
+
+#dateTable button:hover {
+    background-color: #972a2a;
+    border: solid #972a2a 2px;
+    border-radius: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#popupContainer {
+    background-color: white;
+}
+
+#popupContainer h1 {
+    text-align: center;
+}
+
+#popupContainer p {
+    text-align: center;
+}
+
+/*
+    End tablestyle.css
+*/
+
+/*
+    Start manystyle.css
+*/
+
+.menyBody {
+    background-image: url("../resources/resturangblur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.li_sedel {
+    margin-top: 25px;
+    font-size: 1.5vw;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    list-style: none;
+}
+
+.menyh1 {
+    font-family: 'Courier New', monospace;
+    font-size: 3em;
+    margin-bottom: 0;
+    color: black;
+    padding: 0;
+}
+
+.menyh2 {
+    font-family: 'Courier New', monospace;
+    font-size: 2vw;
+    color: white;
+}
+
+.img_frame {
+    border: solid #be3434 4px;
+}
+
+#recension {
+    margin-top: 35px;
+    font-size: 1.4vw;
+    font-family: Georgia, serif;
+}
+
+#img_meny-pesto {
+    width: 90%;
+    margin: auto;
+}
+
+#img_drinks {
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .li_sedel {
+        margin-top: 15px;
+        font-size: 4vw;
+        font-family: Helvetica, sans-serif;
+        color: white;
+    }
+
+    .menyh1 {
+        font-family: 'Courier New', monospace;
+        font-size: 2.5em;
+        margin-bottom: 0;
+        color: black;
+        padding: 0;
+    }
+
+    .menyh2 {
+        font-family: 'Courier New', monospace;
+        font-size: 5vw;
+        color: white;
+    }
+
+    #recension {
+        margin-top: 20px;
+        font-size: 4vw;
+        color: #ebd2cc;
+    }
+
+    #img_meny-pesto {
+        border: solid #be3434 4px;
+        width: 80%;
+        margin: auto;
+    }
+
+    #img_drinks {
+        border: solid #be3434 4px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*
+    End menystyle.css
+*/
+/*
+    Start css.css (Anton)
+*/
+
+
+.indexBody {
+    background-color: #e6e1c8;
+}
+
+article {
+    font-size: 2vw;
+}
+
+
+.title {
+    font-size: 10vw;
+    text-align: center;
+
+    animation: animationStart 2s linear 1; /*Animerar*/
+}
+
+.img_animate {
+    animation: animationStart 4s linear 1
+}
+
+@keyframes animationStart { /*Animationer för titlen*/
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#välkommen {
+    font-size: 3vw;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    article {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 11vw;
+    }
+
+    #välkommen {
+        font-size: 4vw;
+    }
+
+}
+
+/*
+    End css.css
+*/
