@@ -11,6 +11,24 @@ article {
 .title {
   font-size: 10vw;
   text-align: center;
+
+  animation: animationStart 2s linear 1; /*Animerar*/
+}
+
+.img_animate {
+  animation: animationStart 4s linear 1
+}
+
+@keyframes animationStart { /*Animationer för titlen*/
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #välkommen {
@@ -20,12 +38,18 @@ article {
 
 @media only screen and (max-width: 650px) {
 
-  .title {
-    font-size: 7vw;
-  }
-
   article {
     font-size: 3vw;
+    animation: animationStart 5s linear 1
+  }
+
+  .title {
+    font-size: 11vw;
+  }
+
+  #välkommen {
+    font-size: 4vw;
+    animation: animationStart 5s linear 1
   }
 
 }
