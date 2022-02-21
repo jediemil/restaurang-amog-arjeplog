@@ -58,7 +58,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(100, 100, 100, 0.5);
     width: 100vw;
     height: 100vh;
 
@@ -73,8 +73,9 @@
     grid-row: 2/-2;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-gap: 8px;
 }
 
 #popupContainer h1 {
@@ -86,11 +87,16 @@
 }
 
 #timeTable {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
     grid-row: 3/4;
+
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 }
 
-#popupContainer button {
+.popupButton {
     grid-column: 3/4;
     grid-row: 4/5;
 }
@@ -321,4 +327,32 @@
 
 /*
     startgrid.css End
+*/
+/*
+    tack grid start
+*/
+
+#thankContainer {
+    margin-top: 48px;
+
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr 100vh;
+}
+
+#thankContainer h1 {
+    grid-column: 2/-2;
+}
+#thankContainer p {
+    grid-column: 2/-2;
+    grid-row: 2/3;
+}
+
+#thankContainer a {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+/*
+    Tackgrid end
 */

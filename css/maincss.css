@@ -23,6 +23,7 @@ html, body {
     background-color: white;
     color: black;
     height: 10vh;
+    margin: 10px 0;
 }
 
 #dateTable button {
@@ -50,14 +51,36 @@ html, body {
 
 #popupContainer {
     background-color: white;
+    border-radius: 20px;
 }
 
 #popupContainer h1 {
     text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
 #popupContainer p {
     text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.occupied {
+    color: #838383 !important;
+    background-color: #8c2929 !important;
+    border: solid #8c2929 2px !important;
+}
+
+.timeButton {
+    border: solid #be3434 2px;
+    border-radius: 10px;
+    background-color: #be3434;
+    color: white;
+}
+
+.timeButton:hover {
+    background-color: #972a2a;
+    border: solid #972a2a 2px;
+    border-radius: 15px;
 }
 
 /*
@@ -65,7 +88,7 @@ html, body {
 */
 
 /*
-    Start manystyle.css
+    Start menystyle.css
 */
 
 .menyBody {
@@ -222,4 +245,53 @@ article {
 
 /*
     End css.css
+*/
+/*
+    tack css start
+*/
+
+#thankBody {
+    overflow: hidden;
+}
+
+#thankContainer {
+    background-image: url("../resources/resturangblur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#thankContainer h1 {
+    font-size: 7vw;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+#thankContainer p {
+    font-size: 3vw;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+#thankContainer a {
+    background-color: #be3434;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    border: solid #be3434 2px;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+#thankContainer a:hover {
+    background-color: #972a2a;
+    border: solid #972a2a 2px;
+}
+
+/*
+    Tack css end
 */

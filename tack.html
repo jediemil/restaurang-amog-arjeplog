@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+  <meta charset="UTF-8">
+  <title>Tack</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link type="text/css" rel="stylesheet" href="css/topbar.css">
+  <link type="text/css" rel="stylesheet" href="css/maingrid.css">
+  <link rel="stylesheet" type="text/css" href="css/maincss.css">
+</head>
+<body id="thankBody">
+<nav class="topBar"> <!-- Början på topBar -->
+  <img src="resources/amog.png" alt="Logga" id="leftAmog">
+  <a href="index.html">Start</a>
+  <a href="bord.html">Boka bord</a>
+  <a href="meny.html">Vår mat</a>
+  <img src="resources/amog.png" alt="Logga" id="rightAmog">
+</nav>
+<nav class="topBarMobile"> <!-- Mobil topbar -->
+  <button class="dropdownButton" onclick="openBar()">Meny</button>
+  <div class="dropdown" id="dropdownMenu">
+    <a href="index.html">Start</a>
+    <a href="bord.html">Boka bord</a>
+    <a href="meny.html">Vår mat</a>
+    <img src="resources/amog.png" alt="Logga">
+  </div>
+  <script> <!-- Javascript i HTML för störst sannolikhet att det fungerar -->
+  function openBar() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+  }
+  </script>
+</nav> <!-- Slut på topBar -->
+
+<div id="thankContainer">
+  <h1>Tack för din bokning</h1>
+  <p>Hoppas det kommer att smaka</p>
+
+  <a href="index.html">Hem</a>
+</div>
+
+<script src="js/bord.js"></script>
+<script src="js/topbar.js"></script>
+</body>
+</html>
