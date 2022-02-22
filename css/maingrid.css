@@ -175,20 +175,16 @@
     #math2 {
         grid-column: 1/-1;
         grid-row: 3;
-        text-align: center;
     }
 
     #matsedel {
         grid-column: 1/-1;
         grid-row: 4;
-        text-align: center;
-        padding: 0;
     }
 
     #dryckh2 {
         grid-column: 1/-1;
         grid-row: 6;
-        text-align: center;
     }
 
     #drycksedel {

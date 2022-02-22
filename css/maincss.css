@@ -96,7 +96,7 @@ html, body {
 .menyBody {
     background-image: url("../resources/resturangblur.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;     /*bakgrundsbild som är fast */
     background-size: cover;
 }
 
@@ -123,7 +123,7 @@ html, body {
 }
 
 .img_frame {
-    border: solid #be3434 4px;
+    border: solid #be3434 4px;    /* Röd ram för bilder */
 }
 
 #recension {
@@ -200,11 +200,9 @@ article {
     font-size: 2vw;
 }
 
-
 .title {
     font-size: 10vw;
     text-align: center;
-
     animation: animationStart 2s linear 1; /*Animerar*/
 }
 
@@ -212,7 +210,7 @@ article {
     animation: animationStart 4s linear 1
 }
 
-@keyframes animationStart { /*Animationer för titlen*/
+@keyframes animationStart { /*Animationer för titlen och bilder*/
     0% {
         opacity: 0;
     }
@@ -249,7 +247,7 @@ article {
     End css.css
 */
 /*
-    tack css start
+    Tack css start
 */
 
 #thankBody {
