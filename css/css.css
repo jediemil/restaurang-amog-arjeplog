@@ -1,0 +1,31 @@
+
+body {
+  background-color: #e6e1c8;
+}
+
+article {
+  font-size: 2vw;
+}
+
+
+.title {
+  font-size: 10vw;
+  text-align: center;
+}
+
+#välkommen {
+  font-size: 3vw;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .title {
+    font-size: 6vw;
+  }
+
+  article {
+    font-size: 3vw;
+  }
+
+}
