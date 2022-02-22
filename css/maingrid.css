@@ -78,7 +78,7 @@
     grid-gap: 8px;
 }
 
-#popupContainer h1 {
+#popupContainer h2 {
     grid-column: 1/-1;
 }
 
