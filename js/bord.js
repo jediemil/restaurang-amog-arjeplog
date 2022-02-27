@@ -6,7 +6,7 @@ const occupiedArray = ["19:00", "12:30", "12:00", "18:00"] //Bör hämtas från 
 
 let currentMonth = todayMonthNumber - 1
 
-const monthTable = {
+const monthTable = { //Finns biblotek, men jag är dålig på JS
     0: "Januari",
     1: "Februari",
     2: "Mars",
@@ -21,7 +21,7 @@ const monthTable = {
     11: "December"
 }
 
-const monthLength = {
+const monthLength = { //Igen så är jag dålig på JS
     0: 31,
     1: 28,
     2: 31,
@@ -63,7 +63,7 @@ function updateDates() {
                         const timeElement = document.createElement("button");
                         let formatTime = ""
 
-                        if (time/2 % 1) {
+                        if (time/2 % 1) { //Fult, men det fungerar
                             formatTime = (time/2 - 0.5).toString() + ":30"
                         } else {
                             formatTime = (time/2).toString() + ":00"
