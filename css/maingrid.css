@@ -52,6 +52,9 @@
     #dateTable {
         grid-template-columns: repeat(3, 1fr); /*Om skärmen är liten blir det bara tre dagar per rad.*/
     }
+    .popup {
+        grid-template-columns: 0.1fr 3fr 0.1fr !important;
+    }
 }
 
 .popup {
