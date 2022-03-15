@@ -52,6 +52,7 @@
     #dateTable {
         grid-template-columns: repeat(3, 1fr); /*Om skärmen är liten blir det bara tre dagar per rad.*/
     }
+
     .popup {
         grid-template-columns: 0.1fr 3fr 0.1fr !important;
     }
@@ -219,7 +220,7 @@
 
 .startContainer {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(40px, auto);
     margin-top: 48px;
 }
@@ -342,6 +343,7 @@
 #thankContainer h1 {
     grid-column: 2/-2;
 }
+
 #thankContainer p {
     grid-column: 2/-2;
     grid-row: 2/3;

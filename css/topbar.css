@@ -86,12 +86,16 @@ html, body {
 .dropdown {
     display: none;
 }
-.show {display:block;}
+
+.show {
+    display: block;
+}
 
 @media only screen and (max-width: 600px) {
     .topBar {
         display: none;
     }
+
     .topBarMobile {
         display: inline-block;
     }

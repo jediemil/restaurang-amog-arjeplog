@@ -96,7 +96,7 @@ html, body {
 .menyBody {
     background-image: url("../resources/resturangblur.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;     /*bakgrundsbild som är fast */
+    background-attachment: fixed; /*bakgrundsbild som är fast */
     background-size: cover;
 }
 
@@ -123,7 +123,7 @@ html, body {
 }
 
 .img_frame {
-    border: solid #be3434 4px;    /* Röd ram för bilder */
+    border: solid #be3434 4px; /* Röd ram för bilder */
 }
 
 #recension {
