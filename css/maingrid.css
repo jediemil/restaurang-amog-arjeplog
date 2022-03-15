@@ -32,7 +32,7 @@
     grid-column: -3/-1;
 }
 
-#dateTable {
+#dateTable { /*Grid innanför bordContainer griden. För alla olika datum.*/
     grid-row: 3/4;
     grid-column: 2/-2;
 
@@ -50,7 +50,11 @@
 
 @media only screen and (max-width: 450px) {
     #dateTable {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /*Om skärmen är liten blir det bara tre dagar per rad.*/
+    }
+
+    .popup {
+        grid-template-columns: 0.1fr 3fr 0.1fr !important;
     }
 }
 
@@ -65,10 +69,10 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 10vh 80vh 10vh;
-    z-index: 101;
+    z-index: 101; /*Ligger över menyn som har z-index 100*/
 }
 
-#popupContainer {
+#popupContainer { /*Grid innanför .popup griden för att göra det lättare att lägga ut elementen på sidan, egentligen inte nödvändig.*/
     grid-column: 2/-2;
     grid-row: 2/-2;
 
@@ -86,7 +90,7 @@
     grid-column: 1/-1;
 }
 
-#timeTable {
+#timeTable { /*Grid innanför popupContainer griden för tiderna*/
     grid-column: 2/-2;
     grid-row: 3/4;
 
@@ -216,7 +220,7 @@
 
 .startContainer {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(40px, auto);
     margin-top: 48px;
 }
@@ -339,6 +343,7 @@
 #thankContainer h1 {
     grid-column: 2/-2;
 }
+
 #thankContainer p {
     grid-column: 2/-2;
     grid-row: 2/3;

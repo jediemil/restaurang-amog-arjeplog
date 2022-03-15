@@ -3,7 +3,7 @@ let rightAmogY = 0
 let leftAmogX = 0
 let leftAmogY = 0
 
-document.onmousemove = function (e) {
+document.onmousemove = function (e) { //Uppdaterar position när musen rör på sig
     const dxLeft = e.clientX - leftAmogX;
     const dyLeft = e.clientY - leftAmogY;
     const thetaLeft = Math.atan2(dyLeft, dxLeft);
@@ -17,12 +17,12 @@ document.onmousemove = function (e) {
 
 };
 
-window.onload = window.onresize = function () {
+window.onload = window.onresize = function () { //Uppdaterar amog-positioner när fönstret byter storlek
     const leftAmogRect = document.getElementById("leftAmog").getBoundingClientRect()
-    leftAmogY = leftAmogRect.top + leftAmogRect.height/2
-    leftAmogX = leftAmogRect.left + leftAmogRect.width/2
+    leftAmogY = leftAmogRect.top + leftAmogRect.height / 2
+    leftAmogX = leftAmogRect.left + leftAmogRect.width / 2
 
     const rigthAmogRect = document.getElementById("rightAmog").getBoundingClientRect()
-    rightAmogY = rigthAmogRect.top + rigthAmogRect.height/2
-    rightAmogX = rigthAmogRect.left + rigthAmogRect.width/2
+    rightAmogY = rigthAmogRect.top + rigthAmogRect.height / 2
+    rightAmogX = rigthAmogRect.left + rigthAmogRect.width / 2
 }

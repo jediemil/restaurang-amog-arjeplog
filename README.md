@@ -1,3 +1,3 @@
 # restaurang-amog-arjeplog
 
-Elak restaurang
+Elak restaurang lokaliserad i Arjeplog joohoo. Mumsiga klassiker med en kommunistisk touch.

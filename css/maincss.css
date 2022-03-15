@@ -6,17 +6,17 @@ html, body {
     margin: 0;
 }
 
-#bordTitle {
+#bordTitle { /*Titlen*/
     text-align: center;
     font-size: 40px;
 }
 
-#infoText {
+#infoText { /*Texten under titlen*/
     text-align: center;
     font-size: 20px;
 }
 
-.buttons {
+.buttons { /*Alla knappar som navigerar sidan*/
     outline: none;
     border: solid black 2px;
     border-radius: 10px;
@@ -26,7 +26,7 @@ html, body {
     margin: 10px 0;
 }
 
-#dateTable button {
+#dateTable button { /*Knappar som skapas av JS läggs i #dateTable*/
     border: solid #be3434 2px;
     border-radius: 10px;
     background-color: #be3434;
@@ -34,18 +34,18 @@ html, body {
     height: 10vh;
 }
 
-.pastDay {
+.pastDay { /*Om dagen är passerad läggs denna text till*/
     background-color: #8c2929 !important;
     border: solid #8c2929 2px !important;
 }
 
-#dateTable button:hover {
+#dateTable button:hover { /*Om man har musen på de olika tiderna*/
     background-color: #972a2a;
     border: solid #972a2a 2px;
     border-radius: 15px;
 }
 
-.hidden {
+.hidden { /*Används för popupen där man väljer tid*/
     display: none !important;
 }
 
@@ -66,13 +66,13 @@ html, body {
     font-family: Helvetica, sans-serif;
 }
 
-.occupied {
+.occupied { /*Om tiden är ockuperad*/
     color: #838383 !important;
     background-color: #8c2929 !important;
     border: solid #8c2929 2px !important;
 }
 
-.timeButton {
+.timeButton { /*Alla knappar som visar tid, genererad av JS*/
     border: solid #be3434 2px;
     border-radius: 10px;
     background-color: #be3434;
@@ -96,7 +96,7 @@ html, body {
 .menyBody {
     background-image: url("../resources/resturangblur.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;     /*bakgrundsbild som är fast */
+    background-attachment: fixed; /*bakgrundsbild som är fast */
     background-size: cover;
 }
 
@@ -123,7 +123,7 @@ html, body {
 }
 
 .img_frame {
-    border: solid #be3434 4px;    /* Röd ram för bilder */
+    border: solid #be3434 4px; /* Röd ram för bilder */
 }
 
 #recension {
@@ -255,7 +255,7 @@ article {
 }
 
 #thankContainer {
-    background-image: url("../resources/resturangblur.jpg");
+    background-image: url("../resources/resturangblur.jpg"); /*Bakgrundsbild på sidan*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
