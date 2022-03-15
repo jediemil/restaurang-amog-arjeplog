@@ -19,10 +19,10 @@ document.onmousemove = function (e) { //Uppdaterar position när musen rör på 
 
 window.onload = window.onresize = function () { //Uppdaterar amog-positioner när fönstret byter storlek
     const leftAmogRect = document.getElementById("leftAmog").getBoundingClientRect()
-    leftAmogY = leftAmogRect.top + leftAmogRect.height/2
-    leftAmogX = leftAmogRect.left + leftAmogRect.width/2
+    leftAmogY = leftAmogRect.top + leftAmogRect.height / 2
+    leftAmogX = leftAmogRect.left + leftAmogRect.width / 2
 
     const rigthAmogRect = document.getElementById("rightAmog").getBoundingClientRect()
-    rightAmogY = rigthAmogRect.top + rigthAmogRect.height/2
-    rightAmogX = rigthAmogRect.left + rigthAmogRect.width/2
+    rightAmogY = rigthAmogRect.top + rigthAmogRect.height / 2
+    rightAmogX = rigthAmogRect.left + rigthAmogRect.width / 2
 }
